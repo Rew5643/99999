@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Машинная штукатурка Калининград | Amber Wall — от 320 ₽/м²</title>
+  <meta name="description" content="Машинная штукатурка стен и потолков в Калининграде и области. От 320 ₽/м² работа. Под ключ от 580 ₽/м². Бесплатный замер за 24 ч. Гарантия 5 лет. Без предоплаты.">
+  
+  <!-- Open Graph / Соцсети -->
+  <meta property="og:title" content="Машинная штукатурка в Калининграде | Amber Wall">
+  <meta property="og:description" content="От 320 ₽/м² работа • Под ключ от 580 ₽/м² • Гарантия 5 лет • Без предоплаты">
+  <meta property="og:image" content="https://i.postimg.cc/TP6YLSkg/plaster-cement.jpg"> <!-- замени на свою превью-картинку -->
+  <meta property="og:url" content="https://твой-сайт.vercel.app">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Машинная штукатурка в Калининграде | Amber Wall">
+  <meta name="twitter:description" content="От 320 ₽/м² работа • Под ключ от 580 ₽/м²">
+  <meta name="twitter:image" content="https://i.postimg.cc/TP6YLSkg/plaster-cement.jpg">
+  
+  <!-- Favicon (добавь свои файлы favicon.ico, apple-touch-icon.png и т.д. в корень) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #0a3d62;
+      --accent: #d4a017;
+      --light: #f8f9fa;
+      --dark: #1a1a1a;
+      --gray: #6b7280;
+      --success: #27ae60;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--dark);
+      background: var(--light);
+      line-height: 1.6;
+      font-size: 17px;
+      overflow-x: hidden;
+    }
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 15px; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 10vw, 4.8rem); line-height: 1.1; text-align: center; margin: 1rem 0; }
+    h2 { font-size: clamp(1.8rem, 8vw, 3.2rem); text-align: center; margin: 2rem 0 1.5rem; }
+    header {
+      background: linear-gradient(rgba(10,61,98,0.92), rgba(10,61,98,0.85)),
+                  url('https://i.postimg.cc/TP6YLSkg/plaster-cement.jpg') center/cover no-repeat fixed;
+      color: white;
+      padding: clamp(5rem, 22vw, 10rem) 15px 6rem;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 1;
+    }
+    header .content { position: relative; z-index: 2; }
+    header .price {
+      font-size: clamp(2.2rem, 12vw, 4rem);
+      font-weight: 900;
+      color: var(--accent);
+      margin: 0.8rem 0;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    .urgency {
+      background: linear-gradient(135deg, #e63946, #d32f2f);
+      color: white;
+      text-align: center;
+      padding: 1.2rem 15px;
+      font-size: clamp(1.1rem, 5vw, 1.3rem);
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(230,57,70,0.4);
+      margin-bottom: 1rem;
+    }
+    .btn-modern {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--accent), #f1c40f);
+      color: var(--dark);
+      padding: 1rem 2.2rem;
+      border-radius: 999px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-decoration: none;
+      min-height: 56px;
+      width: 100%;
+      max-width: 360px;
+      margin: 1.5rem auto;
+      box-shadow: 0 8px 25px rgba(212,160,23,0.35);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-modern:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(212,160,23,0.55); }
+    .btn-modern:active { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(212,160,23,0.4); }
+    .form-section {
+      background: white;
+      padding: 2rem 15px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      margin: 0 auto 2rem;
+      max-width: 500px;
+    }
+    .form-section label {
+      display: block;
+      margin: 1.2rem 0 0.6rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .form-section input,
+    .form-section textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1.5px solid #ddd;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      transition: border 0.3s;
+    }
+    .form-section input:focus,
+    .form-section textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(212,160,23,0.15);
+    }
+    .form-section textarea { min-height: 110px; resize: vertical; }
+    .form-success {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: var(--success);
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: none;
+    }
+    section { padding: 3rem 0; }
+    .advantages { display: flex; flex-direction: column; gap: 1.2rem; }
+    .adv-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .price-table { overflow-x: auto; margin: 2rem 0; }
+    table { width: 100%; min-width: 600px; border-collapse: collapse; font-size: 0.95rem; }
+    th, td { padding: 0.8rem; border: 1px solid #ddd; text-align: center; }
+    th { background: var(--primary); color: white; }
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 2.5rem 15px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    @media (min-width: 768px) {
+      .advantages { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+      .adv-card { flex: 1 1 300px; max-width: 320px; }
+    }
+  </style>
+</head>
+<body>
+<header data-aos="fade-down">
+  <div class="container content">
+    <h1>Машинная штукатурка в Калининграде</h1>
+    <div class="price">от 320 ₽/м² работа</div>
+    <p>Под ключ от 580 ₽/м² • Гарантия 5 лет • Без предоплаты</p>
+    <a href="#calc" class="btn-modern" aria-label="Рассчитать стоимость бесплатно">Рассчитать бесплатно</a>
+  </div>
+</header>
+
+<div class="urgency" data-aos="zoom-in">
+  Только до конца февраля 2026! Скидка 10% + фиксация цены в договоре
+</div>
+
+<section data-aos="fade-up">
+  <div class="container">
+    <h2>Почему выбирают нас</h2>
+    <div class="advantages">
+      <div class="adv-card"><h3>Экономия до 15%</h3><p>Оптовые цены Knauf/Волма</p></div>
+      <div class="adv-card"><h3>Гарантия 5 лет</h3><p>Официальный договор</p></div>
+      <div class="adv-card"><h3>До 100 м²/день</h3><p>В 4–5 раз быстрее ручной</p></div>
+      <div class="adv-card"><h3>Мастера 12+ лет</h3><p>Knauf, Putzmeister</p></div>
+      <div class="adv-card"><h3>Без предоплаты</h3><p>Оплата по этапам</p></div>
+      <div class="adv-card"><h3>Идеально ровно</h3><p>Лазер • без трещин</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="calc" style="background:#f1f5f9;" data-aos="fade-up">
+  <div class="container">
+    <h2>Рассчитайте стоимость</h2>
+    <div class="form-section">
+      <form id="requestForm">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+        
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required pattern="\+7\s?\(\d{3}\)\s?\d{3}-?\d{2}-?\d{2}" maxlength="18">
+        
+        <label for="area">Площадь помещения (м²)</label>
+        <input type="number" id="area" name="area" placeholder="Например: 85" min="50" required>
+        
+        <label for="comment">Комментарий / пожелания</label>
+        <textarea id="comment" name="comment" placeholder="Что именно нужно сделать? (стены, потолки, откосы и т.д.)" rows="4"></textarea>
+        
+        <button type="submit" class="btn-modern" aria-label="Отправить заявку">Отправить заявку → получите точный расчёт</button>
+      </form>
+      <div class="form-success" id="successMessage">
+        <h3 style="color:var(--success); margin-bottom:1rem;">Спасибо!</h3>
+        <p style="font-size:1.2rem;">Заявка отправлена. Мы перезвоним вам в течение 15–30 минут.</p>
+        <p style="margin-top:1rem; font-size:1rem; color:var(--gray);">
+          Или звоните прямо сейчас: <a href="tel:+79622666604" class="btn-modern" style="max-width:280px; margin:1rem auto; display:block;">+7 (962) 266-66-04</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <div class="container">
+    <h2>Актуальные цены — февраль 2026</h2>
+    <div class="price-table">
+      <table>
+        <tr><th>Вид работ</th><th>Только работа</th><th>Под ключ</th><th>Примечание</th></tr>
+        <tr><td>Гипсовая (до 100 м²)</td><td>от 320 ₽/м²</td><td>от 580–680 ₽/м²</td><td>под обои/покраску</td></tr>
+        <tr><td>Гипсовая (100–300 м²)</td><td>от 300 ₽/м²</td><td>от 550–650 ₽/м²</td><td>объём</td></tr>
+        <tr><td>Потолки</td><td>от 380 ₽/м²</td><td>от 680–820 ₽/м²</td><td>—</td></tr>
+        <tr><td>Откосы / арки</td><td>от 320 ₽/п.м.</td><td>—</td><td>—</td></tr>
+        <tr><td>>500 м²</td><td>договорная</td><td>договорная</td><td>—</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer data-aos="fade-up">
+  <div class="container">
+    <h3>Amber Wall</h3>
+    <p><strong>Телефон:</strong> <a href="tel:+79622666604" class="btn-modern" style="max-width:280px;">+7 (962) 266-66-04</a></p>
+    <p>Бесплатный выезд по Калининграду и области</p>
+    <p style="margin-top:1rem; opacity:0.9;">© 2026 Amber Wall</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+
+  // Маска телефона
+  IMask(document.getElementById('phone'), {
+    mask: '+7 (000) 000-00-00'
+  });
+
+  // Отправка формы в Telegram
+  document.getElementById('requestForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const name = formData.get('name')?.trim() || '';
+    const phone = formData.get('phone')?.trim() || '';
+    const area  = formData.get('area')?.trim()  || '';
+    const comment = formData.get('comment')?.trim() || '—';
+
+    if (!name || !phone || !area || Number(area) < 50) {
+      alert('Заполните все поля корректно (площадь минимум 50 м²)');
+      return;
+    }
+
+    const message = `<b>НОВАЯ ЗАЯВКА С САЙТА!</b>\n\nИмя: ${name}\nТелефон: ${phone}\nПлощадь: ${area} м²\nКомментарий: ${comment}`;
+    const url = `https://api.telegram.org/bot8259238833:AAHt5PQgkkYMjAG0Em362xhmGciB6VsFlP0/sendMessage?chat_id=549314347&parse_mode=HTML&text=${encodeURIComponent(message)}`;
+
+    fetch(url)
+      .then(r => r.json())
+      .then(data => {
+        if (data.ok) {
+          document.getElementById('requestForm').style.display = 'none';
+          document.getElementById('successMessage').style.display = 'block';
+        } else {
+          alert('Не удалось отправить. Позвоните: +7 (962) 266-66-04');
+        }
+      })
+      .catch(() => alert('Ошибка сети. Звоните: +7 (962) 266-66-04'));
+  });
+</script>
+</body>
+</html>
